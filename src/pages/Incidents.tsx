@@ -21,7 +21,7 @@ const SEVERITIES = [
   { value: 'low', label: 'Low' },
 ];
 
-const ANALYSTS = ['alice.johnson', 'bob.williams', 'charlie.brown', 'diana.prince', 'evan.rogers'];
+const ANALYSTS = ['deepanshu.sharma', 'bob.williams', 'charlie.brown', 'diana.prince', 'evan.rogers'];
 
 export default function Incidents() {
   const [incidents, setIncidents] = useState<Incident[]>([]);

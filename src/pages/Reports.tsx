@@ -49,7 +49,7 @@ export default function Reports() {
       title: form.title || `${REPORT_TYPES.find(t => t.value === form.report_type)?.label} - ${new Date().toLocaleDateString()}`,
       report_type: form.report_type,
       status: 'complete',
-      generated_by: 'alice.johnson',
+      generated_by: 'deepanshu.sharma', 
       summary,
       data: {
         alerts: { total: alerts.length, critical: alerts.filter(a => a.severity === 'critical').length },

@@ -66,7 +66,7 @@ export default function Playbooks() {
     await supabase.from('playbook_executions').insert([{
       playbook_id: pb.id,
       status: execState.every(s => s.status === 'success') ? 'completed' : 'failed',
-      triggered_by: 'alice.johnson',
+      triggered_by: 'deepanshu.sharma',
       steps_results: execState,
       completed_at: new Date().toISOString(),
     }]);
@@ -84,7 +84,7 @@ export default function Playbooks() {
       trigger_type: form.trigger_type,
       steps: [],
       enabled: true,
-      created_by: 'alice.johnson',
+      created_by: 'deepanshu.sharma',
     }]);
     setSaving(false);
     setShowCreate(false);

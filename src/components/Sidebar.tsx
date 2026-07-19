@@ -124,8 +124,8 @@ export default function Sidebar({
           </div>
           {!collapsed && (
             <div className="flex-1 min-w-0">
-              <div className="text-sm font-medium truncate" style={{ color: '#FFFFFF' }}>alice.johnson</div>
-              <div className="text-sm truncate" style={{ color: '#94A3B8' }}>SOC Lead</div>
+              <div className="text-sm font-medium truncate" style={{ color: '#FFFFFF' }}>deepanshu.sharma</div>
+              {/* <div className="text-sm truncate" style={{ color: '#94A3B8' }}>SOC Lead</div> */}
             </div>
           )}
         </div>

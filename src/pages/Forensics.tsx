@@ -11,7 +11,7 @@ const STATUSES = [
   { value: 'closed', label: 'Closed' },
 ];
 
-const EXAMINERS = ['alice.johnson', 'bob.williams', 'charlie.brown', 'diana.prince', 'evan.rogers'];
+const EXAMINERS = ['deepanshu.sharma', 'bob.williams', 'charlie.brown', 'diana.prince', 'evan.rogers'];
 
 const ANALYSIS_TOOLS = [
   { name: 'Volatility 3', type: 'Memory Analysis', description: 'Analyze memory dumps for process trees, network connections, injected code' },
@@ -75,7 +75,7 @@ export default function Forensics() {
       id: Date.now(),
       description: newEvidence,
       collected_at: new Date().toISOString(),
-      collector: 'alice.johnson',
+      collector: 'deepanshu.sharma',
     }];
     await supabase.from('forensic_cases').update({ evidence_items: items, updated_at: new Date().toISOString() }).eq('id', selected.id);
     setNewEvidence('');
